@@ -7,7 +7,7 @@
     </div>
     <div v-else>
       <SignupForm />
-      <p>Already registered? <span @click="showLogin = true">Login</span>instead</p>
+      <p>Already registered? <span @click="showLogin = true">Login</span> instead</p>
     </div>    
   </div>
 </template>
