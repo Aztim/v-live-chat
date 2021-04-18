@@ -1,13 +1,16 @@
 <template>
-  <div><h1>Hello!</h1></div>
+  <div class="container">
+    <Navbar />
+  </div>
 </template>
 
 <script>
+import Navbar from '../components/Navbar'
 export default {
-
+  components: { Navbar }
 }
 </script>
 
 <style>
-
+  
 </style>
