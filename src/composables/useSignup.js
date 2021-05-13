@@ -3,7 +3,7 @@ import { projectAuth } from '../firebase/config'
 
 const error = ref(null)
 
-const signup = async (email, password, displaName ) => {
+const signup = async (email, password, displayName ) => {
   error.value = null
   
   try { 
@@ -11,10 +11,10 @@ const signup = async (email, password, displaName ) => {
     if (!res) {
       throw new Error('Could not complete the signup')
     }
-    await res.user.updateProfile({ displaName })
+    await res.user.updateProfile({ displayName })
     error.value = null
 
-    return res 
+    return res
 
   } catch(err) {
     console.log(err.message)
