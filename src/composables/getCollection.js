@@ -17,8 +17,10 @@ const getCollection = (collection) => {
       error.value = null
     }, (err) => {
       console.log(err.message)
-      documents.value = nullerror.value = 'could not fetch data'
+      error.value = error.value = 'could not fetch data'
     })
 
     return {documents, error}
 }
+
+export default getCollection
