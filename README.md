@@ -1,4 +1,6 @@
 # live-chat
+Nothing special ! Just testing VUE 3 :-)
+
 
 ## Project setup
 ```
